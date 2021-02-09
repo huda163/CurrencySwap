@@ -1,0 +1,11 @@
+FROM node:14
+
+WORKDIR .
+
+EXPOSE 5000
+
+COPY . .
+
+RUN apt-get install python3
+
+CMD ["python3","-m","http.server"] 

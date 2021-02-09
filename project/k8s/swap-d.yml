@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: swap
+  labels:
+    name: swap
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: swap
+  template:
+    metadata:
+      labels:
+        name: swap
+    spec:
+      containers:
+      - name: swap
+        image: 1631995/swap
+        ports:
+        - containerPort: 8000
+      hostname: swap

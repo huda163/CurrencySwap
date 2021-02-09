@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currency Converter in Javascript</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <body  background="https://image.freepik.com/free-vector/global-currency-background_115579-405.jpg "  >                                                                                                             
+        <p><button type='button' onclick="window.location.href='/Audit/audit.html'" id="audit">Check the Audit</button></p>                              
+        <div class="container" >
+            <br><br>
+            <h1 style="text-align: center;">Currency Converter</h1>
+            <form id="myForm">
+                <br><br>
+                <label for="Base Currency">Base Currency</label>
+                <select class="form-control" id="base">
+                    <option>USD</option>
+                    <option>HKD</option>
+                    <option>CZK</option>
+                    <option>GBP</option>
+                    <option>RON</option>
+                    <option>SEK</option>
+                    <option>IDR</option>
+                    <option>INR</option>
+                    <option>BRL</option>
+                    <option>RUB</option>
+                    <option>EUR</option>
+                    <option>MYR</option>
+                    <option>BGN</option>
+                    <option>MXN</option>
+                    <option>SGD</option>
+                    <option>AUD</option>
+                    <option>ILS</option>
+                </select>
+                <br>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="baseNumber" value="1">
+                </div>
+                <label for="Target Currency">Target Currency</label>
+                <select class="form-control" id="target">
+                    <option>USD</option>
+                    <option>HKD</option>
+                    <option>CZK</option>
+                    <option>GBP</option>
+                    <option>RON</option>
+                    <option>SEK</option>
+                    <option>IDR</option>
+                    <option>INR</option>
+                    <option>BRL</option>
+                    <option>RUB</option>
+                    <option>EUR</option>
+                    <option>MYR</option>
+                    <option>BGN</option>
+                    <option>MXN</option>
+                    <option>SGD</option>
+                    <option>AUD</option>
+                    <option>ILS</option>
+                </select>
+                <br>
+                <div class="form-group">
+                 <style>
+                    .button {
+                        background-color: #4CAF50; /* Green */
+                        border: none;
+                        color: white;
+                        padding: 8px 32px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 18px;
+                        margin: 3px 2px;
+                        cursor: pointer;
+                        position: absolute;
+                       top: 55%;
+                      left: 50%;
+                      }
+                      
+                      .button1 {
+                        background-color: white; 
+                        color: black; 
+                        border: 2px solid #4CAF50;
+                      }
+                      </style>
+         
+                  <button type='button' class="button button1" id="convert">convert</button>    
+                      
+                </div>
+               
+            </form>
+            <input type="number"   style=" top:500px;"  id="targetNumber">
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>  
+        
+           
+        <script src="converter.js"></script>
+             
+    </body>
+</html>
